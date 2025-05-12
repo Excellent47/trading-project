@@ -1,0 +1,14 @@
+jdbcUrl: jdbc:postgresql://localhost:5432/postgres?cachePrepStmts=true&prepStmtCacheSize=150&prepStmtCacheSqlLimit=4096&prepareThreshold=0&reWriteBatchedInserts=true&reWriteBatchedInsertsSize=100
+username: postgres
+password: postgres
+driver: org.postgresql.Driver
+minIdle: 10
+maxPoolSize: 10
+connectionTimeout: 60000
+idleTimeout: 5000
+maxLifetime: 1800000
+
+#  cachePrepStmts: true        - включает кэширование PreparedStatement
+#  prepStmtCacheSize: 150      - размер кэша подготовленных выражений
+#  prepStmtCacheSqlLimit: 4096 - максимальная длина SQL, который будет кэшироваться. Расчет идет, исходя из запроса MERGE со 100 элементами
+#  prepareThreshold: 0         - использует серверные prepared statements вместо клиентских
